@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agenda.CadastroActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <EditText
+        android:id="@+id/txt_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite o nome"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/txt_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite o endereço"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/txt_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite o telefone"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite o email"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/txt_linkedin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite o endereço do linkedin"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        />
+
+
+
+
+
+</LinearLayout>
