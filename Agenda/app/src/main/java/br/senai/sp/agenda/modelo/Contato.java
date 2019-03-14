@@ -1,9 +1,11 @@
 package br.senai.sp.agenda.modelo;
 
-public class Contato {
+import java.io.Serializable;
+
+public class Contato implements Serializable{
 
 
-    private Integer id;
+    private int id;
     private String nome;
     private String endereco;
     private String telefone;
@@ -57,6 +59,10 @@ public class Contato {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String toString(){
+        return  Contato.this.nome;
     }
 
 }

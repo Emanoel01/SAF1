@@ -10,13 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".agenda.MainActivity">
+
+        </activity>
+        <activity android:name=".agenda.CadastroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".agenda.MainActivity"></meta-data>
+        </activity>
+        <activity android:name=".agenda.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".agenda.CadastroActivity"></activity>
+
+
+
     </application>
 
 </manifest>

@@ -56,7 +56,7 @@ public class ContatoDAO extends SQLiteOpenHelper{
 
         SQLiteDatabase db = getReadableDatabase();
 
-        String sql = "SELECT * FROM tbl_filme";
+        String sql = "SELECT * FROM tblContatos";
 
         Cursor c = db.rawQuery(sql,null);
 
@@ -74,6 +74,22 @@ public class ContatoDAO extends SQLiteOpenHelper{
         }
 
         return contatos;
+    }
+
+    public void atualizar(Contato contato){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues dados = getContentValues(contato);
+
+        String[] params = {String.valueOf(contato.getId())};
+
+        db.update("tblContatos",dados,"id=?",params);
+    }
+
+    public void excluir(Contato contato){
+        SQLiteDatabase db = getWritableDatabase();
+        String[] params = {String.valueOf(contato.getId())};
+
+        db.delete("tblContatos","id=?",params);
     }
 
 

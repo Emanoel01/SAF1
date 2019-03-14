@@ -9,55 +9,87 @@
     android:padding="16dp"
     >
 
-    <EditText
-        android:id="@+id/txt_nome"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Digite o nome"
-        android:gravity="center"
-        />
+        android:id="@+id/layout_txt_nome">
+        <EditText
+            android:id="@+id/txt_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o nome"
+            android:gravity="center"
+            />
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/txt_endereco"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Digite o endereço"
-        android:gravity="center"
-        />
+        android:id="@+id/layout_txt_endereco">
 
-    <EditText
-        android:id="@+id/txt_telefone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Digite o telefone"
-        android:gravity="center"
-        />
+        <EditText
+            android:id="@+id/txt_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o endereço"
+            android:gravity="center"
+            />
 
-    <EditText
-        android:id="@+id/txt_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Digite o email"
-        android:gravity="center"
-        />
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/txt_linkedin"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Digite o endereço do linkedin"
-        android:gravity="center"
-        />
+        android:id="@+id/layout_txt_telefone">
 
-    <Button
-        android:id="@+id/btn_salvar"
+        <EditText
+            android:id="@+id/txt_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o telefone"
+            android:gravity="center"
+            android:inputType="phone"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Salvar"
-        android:textColor="@color/colorWhite"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="16dp"
-        />
+        android:id="@+id/layout_txt_email"
+
+        >
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o email"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_txt_endereco_linkedin">
+
+            <EditText
+                android:id="@+id/txt_linkedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o endereço do linkedin"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                />
+
+    </android.support.design.widget.TextInputLayout>
+
+
 
 
 
